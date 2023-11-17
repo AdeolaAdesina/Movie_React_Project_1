@@ -104,6 +104,89 @@ A string is also acceptable:
 
 
 
+## React State
+
+The state is completely managed by the component itself.
+
+We import useState from react.
+
+Now let's create a counter with 2 buttons.
+
+![Screenshot_57](https://github.com/AdeolaAdesina/Movie_React_Project_1/assets/29931071/33bb171f-4c1d-4046-bbd8-ded307777d23)
+
+To make it clickable, we have to use state.
+
+First we create an empty array and call the useState as a function. When it starts with use, we call it a hook.
+
+The first part is a name, the second part is a setter function.
+
+Inside the useState(), you provide the initial value = 0.
+
+Now you can use this counter as a normal Javascript variable.
+
+![Screenshot_58](https://github.com/AdeolaAdesina/Movie_React_Project_1/assets/29931071/9f2252a6-b26c-46db-90bd-f7d0dc2dc053)
+
+This works but it doesn't click.
+
+Now we will learn about events.
+
+## Events
+
+Event is an action that can be triggered as a result of the user action.
+
+Now we can give the button an onClick attribute which is going to have a callback function.
+
+![Screenshot_59](https://github.com/AdeolaAdesina/Movie_React_Project_1/assets/29931071/877819b7-5a58-4a1f-ae68-c4a35854d3ba)
+
+But now we want to change the state when it's clicked. So we will use the setter function - setCounter.
+
+![Screenshot_60](https://github.com/AdeolaAdesina/Movie_React_Project_1/assets/29931071/19a1eed6-de29-411a-8ecf-7a7a61ad928b)
+
+We can now create a callback function inside the setCounter.
+
+![Screenshot_61](https://github.com/AdeolaAdesina/Movie_React_Project_1/assets/29931071/04ffbe0a-ec24-4a4d-b0ac-aedc741cdc3a)
+
+
+We can now do the same for the second button.
+
+![Screenshot_62](https://github.com/AdeolaAdesina/Movie_React_Project_1/assets/29931071/855b41ae-10f9-47b3-bae5-f1a1f0460dbd)
+
+Read the React Documentation
+
+## useEffect
+
+We also import it at the top.
+
+Use effect is called as a function that accepts a callback function.
+
+![Screenshot_63](https://github.com/AdeolaAdesina/Movie_React_Project_1/assets/29931071/83d71420-c33d-4362-94a2-415baa638eba)
+
+useEffect allows us do something on an event.
+
+![Screenshot_64](https://github.com/AdeolaAdesina/Movie_React_Project_1/assets/29931071/f0d17d41-c4eb-4a9a-b1fc-300016946039)
+
+This code happens as soon as this component renders.
+
+What if we want to set the initial count to 100?
+
+![Screenshot_65](https://github.com/AdeolaAdesina/Movie_React_Project_1/assets/29931071/0147963e-56c6-4ef4-bfd2-4b30b89d08c1)
+
+But we can't modify it.
+
+There's a second parameter to the useEfect called a dependency array.
+
+![Screenshot_66](https://github.com/AdeolaAdesina/Movie_React_Project_1/assets/29931071/2149c6ed-d9b9-4cae-81e8-b52556a1e176)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
